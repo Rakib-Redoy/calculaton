@@ -1,0 +1,15 @@
+.convert-btn{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #4406CB; 
+    color: white;
+    outline: none;
+    transition-duration: .2s;
+}
+
+.convert-btn:hover{
+    background: #4406cb85;
+    color: white;
+}

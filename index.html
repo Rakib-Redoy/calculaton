@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/926de3652d.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-orange-100">
+    <section class=" md:px-8 bg-zinc-300">
+        <div class="navbar py-3">
+            <div class="navbar-start">
+                <h1 class="btn btn-ghost text-2xl ">Interactive </h1>
+            </div>
+            <div class="navbar-end">
+                <a href="answer.html" class="btn">Get started</a>
+            </div>
+        </div>
+    </section>
+    <section class="p-3 md:flex md:gap-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 md:w-2/3 gap-5">
+
+            <!------------- card-1 ---------->
+            <div class="change-color card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10 h-1/2">
+                  <img src="images/triangle.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="triangle-card" class="card-title">Triangle</h2>
+
+                  <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> <span id="text1-card1">b</span>
+                                    <i class="fa-solid fa-xmark"></i> <span id="text2-card1">h</span>  
+                 </p>
+
+                    <div class="my-2">
+                        <input id="base-c1-value" type="text" placeholder="b" class="w-2/6 lg:w-3/6 lg:mb-2 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                        <input id="height-c1-value" type="text" placeholder="h" class="w-2/6 lg:w-3/6 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                    </div>
+                    <div class="card-actions">
+                        <button id="triangle-btn" class="btn  btn-primary">calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!------------- card-2 ---------->
+            <div class="change-color card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10 h-1/2">
+                  <img src="images/rectangle.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="Rectangle-card" class="card-title">Rectangle</h2>
+                  <p>Area (A) =
+                    <span id="text1-card2">w</span> <i class="fa-solid fa-xmark"></i> <span id="text2-card2">l</span>
+                  </p>
+                    <div class="my-2">
+                        <input id="width-c2-value" type="text" placeholder="w" class="w-2/6 lg:w-3/6 lg:mb-2 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                        <input id="length-c2-value" type="text" placeholder="l" class="w-2/6 lg:w-3/6 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                    </div>
+                    <div class="card-actions">
+                        <button id="rectangle-btn" class="btn  btn-primary">calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!------------- card-3 ---------->
+            <div class="change-color card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10 h-1/2">
+                  <img src="images/parallelogram.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="parallelogram-card" class="card-title">Parallelogram</h2>
+                  <p>Area (A) = <span id="text1-card3">b</span> <i class="fa-solid fa-xmark"></i> <span id="text2-card3">h</span> </p>
+                    <div class="my-2">
+                        <input id="base-c3-value" type="text" placeholder="b" class="w-2/6 lg:w-3/6 lg:mb-2 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                        <input id="height-c3-value" type="text" placeholder="h" class="w-2/6 lg:w-3/6 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                    </div>
+                    <div class="card-actions">
+                        <button id="parallelogram-btn" class="btn  btn-primary">calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!------------- card-4 ---------->
+            <div class="change-color card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10 h-1/2">
+                  <img src="images/rhombus.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="rhombus-card" class="card-title">Rhombus</h2>
+                  <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i>
+                                        <span id="text1-card4">d<sub>1</sub></span> 
+                                     <i class="fa-solid fa-xmark"></i>
+                                        <span id="text2-card4"> d<sub>2</sub></span>
+                  </p>
+                    <div class="my-2">
+                        <input id="d1-c4-value" type="text" placeholder="cm" class="w-2/6 lg:w-3/6 lg:mb-2 border outline-0 rounded text-center" />
+                        <span> d<sub>1</sub></span>
+                        <input id="d2-c4-value" type="text" placeholder="cm" class="w-2/6 lg:w-3/6 border outline-0 rounded text-center" />
+                        <span> d<sub>2</sub></span>
+                    </div>
+                    <div class="card-actions">
+                        <button id="rhombus-btn" class="btn  btn-primary">calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!------------- card-5 ---------->
+            <div class="change-color card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10 h-1/2">
+                  <img src="images/pentagon.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="pentagon-card" class="card-title">Pentagon</h2>
+                  <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i>
+                                         <span id="text1-card5">p</span> 
+                                    <i class="fa-solid fa-xmark"></i>
+                                         <span id="text2-card5">b</span>
+                  </p>
+                    <div class="my-2">
+                        <input id="perimeter-value" type="text" placeholder="p" class="w-2/6 lg:w-3/6 lg:mb-2 border outline-0 rounded text-center" />
+                        <span>cm</span>
+                        <input id="apothem-value" type="text" placeholder="b" class="w-2/6 lg:w-3/6 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                    </div>
+                    <div class="card-actions">
+                        <button id="pentagon-btn" class="btn  btn-primary">calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!------------- card-6 ---------->
+            <div class="change-color card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10 h-1/2">
+                  <img src="images/ellipse.png" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="ellipse-card" class="card-title">Ellipse</h2>
+                  <p>Area (A) = π<span id="text1-card6">a</span><span id="text2-card6">b</span></p>
+                    <div class="my-2">
+                        <input id="a-value" type="text" placeholder="a" class="w-2/6 lg:w-3/6 lg:mb-2 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                        <input id="b-value" type="text" placeholder="b" class="w-2/6 lg:w-3/6 border outline-0 rounded text-center" />
+                        <span> cm</span>
+                    </div>
+                    <div class="card-actions">
+                        <button id="ellipse-btn" class="btn  btn-primary">calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:w-full md:w-1/3 border rounded-xl mt-5 md:mt-0 bg-purple-200">
+            <h1 class="text-4xl text-center font-semibold">Area Calculation</h1>
+            <div class="overflow-x-auto">
+                
+                </table>
+                <table class="table w-full table-compact">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Result</th>
+                            <th>C Btn</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-container">
+
+                    </tbody>
+                </table>
+              </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
